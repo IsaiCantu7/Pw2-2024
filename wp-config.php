@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'Programacion' );
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'admin' );
 
 /** Database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', '9012d31aff3277fcb373c5b8b863dd4d9800ea986c153c93' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
