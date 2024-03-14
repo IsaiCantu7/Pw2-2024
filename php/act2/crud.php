@@ -1,5 +1,4 @@
 <?php
-// Conexión a la base de datos (suponiendo que ya tienes un archivo de conexión)
 include 'db.php';
 
 // Función para agregar un nuevo vehículo
@@ -55,7 +54,7 @@ if (isset($_POST['alta_vehiculo'])) {
     if (agregarVehiculo($numero_serie, $marca, $submarca, $modelo, $anio, $tipo, $color, $capacidad, $procedencia)) {
         // Redirigir al usuario al listado de vehículos
         header("Location: crud.php");
-        exit(); // Asegura que el script se detenga después de la redirección
+        exit(); 
     } else {
         echo "Error al agregar el vehículo.";
     }
@@ -79,7 +78,7 @@ if (isset($_POST['editar_vehiculo'])) {
     if (editarVehiculo($id, $numero_serie, $marca, $submarca, $modelo, $anio, $tipo, $color, $capacidad, $procedencia)) {
         // Redirigir al usuario al listado de vehículos
         header("Location: crud.php");
-        exit(); // Asegura que el script se detenga después de la redirección
+        exit(); 
     } else {
         echo "Error al editar el vehículo.";
     }
@@ -94,7 +93,7 @@ if (isset($_POST['eliminar_vehiculo'])) {
     if (eliminarVehiculo($id)) {
         // Redirigir al usuario al listado de vehículos
         header("Location: crud.php");
-        exit(); // Asegura que el script se detenga después de la redirección
+        exit(); 
     } else {
         echo "Error al eliminar el vehículo.";
     }
@@ -189,8 +188,6 @@ if (isset($_POST['eliminar_vehiculo'])) {
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Aquí se mostrarán los vehículos desde la base de datos -->
-                        <!-- Utiliza PHP para generar las filas de la tabla -->
                     </tbody>
                 </table>
             </div>
