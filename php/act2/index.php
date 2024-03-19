@@ -13,7 +13,6 @@
             <li class="list-group-item"><a href="alta_vehiculo.php">Alta de Vehículo</a></li>
             <li class="list-group-item"><a href="catalogo_servicio.php">Catálogo de Servicios</a></li>
             <li class="list-group-item"><a href="confirmar_servicio.php">Confirmar Servicio</a></li>
-            <li class="list-group-item"><a href="crud.php">CRUD</a></li>
             <li class="list-group-item"><a href="editar_vehiculo.php">Editar Vehículo</a></li>
             <li class="list-group-item"><a href="eliminar_vehiculo.php">Eliminar Vehículo</a></li>
             <li class="list-group-item"><a href="eliminar_servicio.php">Eliminar Servicio</a></li>

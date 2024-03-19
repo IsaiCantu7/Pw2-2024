@@ -14,7 +14,7 @@
         $sql = "INSERT INTO alumnos (matricula, nombre, edad, email, id_carrera) VALUES ('$matricula', '$nombre', '$edad', '$email', '$id_carrera')";
         $result =  $conn->query($sql);
         header('Location: listado.php');
-        exit(); // Terminar la ejecución del script después de redirigir
+        exit(); 
     }
 
     // Baja de alumnos
@@ -23,7 +23,7 @@
         $sql = "DELETE FROM alumnos WHERE id=$id_alumno";
         $result = $conn->query($sql);
         header("Location: listado.php");
-        exit(); // Terminar la ejecución del script después de redirigir
+        exit(); 
     }
     
     // Cambio de alumnos

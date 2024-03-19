@@ -1,5 +1,4 @@
 <?php
-// incluir el archivo de conexión a la base de datos
 include 'db.php';
 
 // Consultar todas las carreras
@@ -34,7 +33,7 @@ if ($result->num_rows > 0) {
                     <th>Descripción</th>
                     <th>Fecha de Inicio</th>
                     <th>Fecha de Fin</th>
-                    <th>Acciones</th> <!-- Columna para enlaces de edición y eliminación -->
+                    <th>Acciones</th> 
                 </tr>
             </thead>
             <tbody>

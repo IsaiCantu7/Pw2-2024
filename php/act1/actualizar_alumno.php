@@ -23,7 +23,6 @@ if(isset($_POST['editar_alumno'])) {
     // Cerrar la conexión a la base de datos
     $conn->close();
 } else {
-    // Si el formulario no se envió correctamente, redirigir al formulario de edición de alumno
     header("Location: editar_alumno.php");
     exit();
 }

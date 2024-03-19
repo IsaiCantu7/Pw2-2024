@@ -20,34 +20,30 @@
                 <label for="carrera">Carrera:</label>
                 <select class="form-control" name="carrera_id" id="carrera_id" required>
                     <option value="">Seleccionar Carrera</option>
-                    <!-- Las opciones de carrera se cargarán dinámicamente aquí -->
                 </select>
             </div>
             <button type="submit" class="btn btn-primary" name="alta_materia">Guardar</button>
         </form>
     </div>
 
-    <!-- Script para cargar dinámicamente las opciones de carrera -->
     <script>
-        // Función para cargar las opciones de carrera desde el servidor mediante AJAX
         function cargarCarreras() {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     var carreras = JSON.parse(this.responseText);
                     var select = document.getElementById("carrera_id");
-                    select.innerHTML = ""; // Limpiar opciones existentes
-                    select.innerHTML += "<option value=''>Seleccionar Carrera</option>"; // Agregar opción por defecto
+                    select.innerHTML = ""; 
+                    select.innerHTML += "<option value=''>Seleccionar Carrera</option>"; 
                     for (var i = 0; i < carreras.length; i++) {
                         select.innerHTML += "<option value='" + carreras[i].id + "'>" + carreras[i].nombre_carrera + "</option>"; // Agregar opciones de carrera
                     }
                 }
             };
-            xhttp.open("GET", "obtener_carreras.php", true); // Ajusta la URL según la ruta de tu archivo PHP para obtener carreras
+            xhttp.open("GET", "obtener_carreras.php", true); 
             xhttp.send();
         }
 
-        // Llamar a la función para cargar las carreras cuando se cargue la página
         window.onload = cargarCarreras;
     </script>
 </body>

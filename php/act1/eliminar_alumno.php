@@ -1,12 +1,10 @@
 <?php
-// incluir el archivo de conexión a la base de datos
 include 'db.php';
 
 // Verificar si se ha pasado el parámetro 'id_alumno' en la URL
 if(isset($_GET['id_alumno'])) {
     $id_alumno = $_GET['id_alumno'];
     
-    // Preparar la consulta SQL para eliminar al alumno
     $sql_eliminar = "DELETE FROM alumnos WHERE id = $id_alumno";
     
     // Ejecutar la consulta SQL
@@ -16,10 +14,8 @@ if(isset($_GET['id_alumno'])) {
         echo "Error al eliminar al alumno: " . $conn->error;
     }
 
-    // Cerrar la conexión a la base de datos
     $conn->close();
 } else {
-    // Manejar el caso en que no se pasó el parámetro 'id_alumno' en la URL
     echo "El parámetro id_alumno no se ha pasado correctamente.";
     exit();
 }

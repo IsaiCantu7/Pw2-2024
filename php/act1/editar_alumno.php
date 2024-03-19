@@ -1,8 +1,6 @@
 <?php
-// incluir el archivo de conexión a la base de datos
 include 'db.php';
 
-// Verificar si se ha pasado el parámetro 'id_alumno' en la URL
 if(isset($_GET['id_alumno'])) {
     $id_alumno = $_GET['id_alumno'];
     
@@ -19,7 +17,6 @@ if(isset($_GET['id_alumno'])) {
         exit();
     }
 } else {
-    // Manejar el caso en que no se pasó el parámetro 'id_alumno' en la URL
     echo "El parámetro id_alumno no se ha pasado correctamente.";
     exit();
 }

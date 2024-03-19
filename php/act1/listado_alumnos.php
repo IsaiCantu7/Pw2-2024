@@ -1,5 +1,4 @@
 <?php
-// incluir el archivo de conexión a la base de datos
 include 'db.php';
 
 // Consultar todos los alumnos
@@ -33,7 +32,7 @@ if ($result->num_rows > 0) {
                     <th>Nombre</th>
                     <th>Apellido</th>
                     <th>Edad</th>
-                    <th>Acciones</th> <!-- Nueva columna para acciones -->
+                    <th>Acciones</th> 
                 </tr>
             </thead>
             <tbody>

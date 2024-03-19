@@ -166,7 +166,6 @@ if (isset($_POST['eliminar_vehiculo'])) {
             </div>
         </div>
         
-        <!-- Tabla para mostrar el listado de vehículos -->
         <div class="card">
             <div class="card-header">
                 Listado de Vehículos

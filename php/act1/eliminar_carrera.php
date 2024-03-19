@@ -1,8 +1,6 @@
 <?php
-// incluir el archivo de conexión a la base de datos
 include 'db.php';
 
-// Verificar si se ha pasado el parámetro 'id_carrera' en la URL
 if(isset($_GET['id_carrera'])) {
     $id_carrera = $_GET['id_carrera'];
     
@@ -16,7 +14,6 @@ if(isset($_GET['id_carrera'])) {
         echo "Error al eliminar la carrera: " . $conn->error;
     }
 
-    // Cerrar la conexión a la base de datos
     $conn->close();
 } else {
     // Manejar el caso en que no se pasó el parámetro 'id_carrera' en la URL
