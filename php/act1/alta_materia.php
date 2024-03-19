@@ -48,8 +48,10 @@ if(isset($_POST['alta_carrera'])) {
                 <label for="carrera">Carrera:</label>
                 <select class="form-control" name="carrera" required>
                     <option value="">Seleccionar Carrera</option>
+                    <!-- Aquí debes cargar dinámicamente las opciones de carrera desde la base de datos -->
                     <option value="1">Carrera 1</option>
                     <option value="2">Carrera 2</option>
+                    <!-- Asegúrate de cargar las carreras desde la base de datos -->
                 </select>
             </div>
             <button type="submit" class="btn btn-primary" name="alta_carrera">Guardar</button>

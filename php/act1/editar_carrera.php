@@ -53,6 +53,7 @@ if(isset($_GET['id_carrera'])) {
                 <label for="fecha_fin">Fecha de Fin:</label>
                 <input type="date" class="form-control" name="fecha_fin" value="<?php echo $carrera['fecha_fin']; ?>" required>
             </div>
+            <!-- Puedes agregar más campos para editar según tus necesidades -->
             <button type="submit" class="btn btn-primary" name="cambio_carrera">Guardar Cambios</button>
         </form>
     </div>
